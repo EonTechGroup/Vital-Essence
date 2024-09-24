@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="">
   <meta name="description" content="">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" href="img/logo.png" sizes="any">
+  <link rel="icon" href="img/logo.png" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/logo.png">
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
@@ -21,6 +21,80 @@
 
   <body>
 
+  <!--Navigation Bar-->
+    <nav class="fixed w-full z-20 top-0 start-0 pt-7">
+      <div class="mx-5">
+        <div class="relative flex items-center justify-around">
+          <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
+            <!-- Mobile menu button-->
+            <button type="button" id="mobile-menu-button" class="relative inline-flex items-center justify-center rounded-md p-2 text-blue-950 hover:bg-blue-950 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <svg id="menu-open-icon" class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <svg id="menu-close-icon" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <!--<div class="absolute inset-y-0 flex items-center justify-center md:hidden">
+            <img class="h-11 w-auto" src="img/logo.png" alt="">
+          </div>-->
+          <div class="flex-1 h-20 mx-3">
+            <div class="hidden md:flex md:justify-between">
+              <a href="#" class="rounded-full w-fit bg-white text-sm ">
+                <img class="h-24 w-auto" src="img/logo.png" alt="">
+              </a>
+              <div class="flex items-center justify-center space-x-20 sm:space-x-9 xl:w-3/6 w-4/6 bg-white lg:h-14 h-10 rounded-full shadow-[0px_4px_54px_0px_rgba(26,62,63,0.2)]">
+                <a href="#" class="rounded-md px-3 py-3 xl:text-xl lg:text-lg text-sm text-[#1A3E3F] font-sans font-[650]">Home</a>
+                <a href="#" class="rounded-md px-3 py-3 xl:text-xl lg:text-lg text-sm text-[#1A3E3F] font-sans font-[650]">About Us</a>
+                <a href="#" class="rounded-md px-3 py-3 xl:text-xl lg:text-lg text-sm text-[#1A3E3F] font-sans font-[650]">Brands</a>
+                <a href="#" class="rounded-md px-3 py-3 xl:text-xl lg:text-lg text-sm text-[#1A3E3F] font-sans font-[650]">Products</a>
+                <a href="#" class="rounded-md px-3 py-3 xl:text-xl lg:text-lg text-sm text-[#1A3E3F] font-sans font-[650]">Sustainability</a>
+              </div>
+              <div class="flex items-center justify-center rounded-full bg-[#EFD49E] lg:w-40 lg:h-14 w-30 h-10">
+                <a href="#" class="rounded-md px-3 py-3 lg:text-xl text-[#1A3E3F] font-s ans font-[650]">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="md:hidden bg-white hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a href="#" class="block rounded-md bg-blue-950 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a>
+          <a href="#" class="block rounded-md px-3 py-2 text-base font-semibold font-sans text-blue-950 hover:bg-blue-900 hover:text-white">Team</a>
+          <a href="#" class="block rounded-md px-3 py-2 text-base font-semibold font-sans text-blue-950 hover:bg-blue-900 hover:text-white">Projects</a>
+          <a href="#" class="block rounded-md px-3 py-2 text-base font-semibold font-sans text-blue-950 hover:bg-blue-900 hover:text-white">Calendar</a>
+        </div>
+      </div>
+    </nav>
+
+  <section class="h-3/4">
+    <div class="w-auto h-[43.5rem] mx-5 my-5 rounded-3xl bg-cover bg-center " style="background-image: url('/img/home.jpg');">
+      <div class="h-full w-full rounded-3xl bg-gradient-to-b from-[rgba(239,212,158,0)] via-[#EFD49E66] to-[#EFD49E] flex justify-center flex-col items-center text-center">
+        <div class="rounded-full w-fit bg-white m-10">
+          <img src="img/logo.png" alt="" class="w-64">
+        </div>
+        <div class="flex items-center flex-col justify-center">
+          <div class="font-bold text-[#1A3E3F] sm:text-5xl text-4xl mb-5 lg:w-3/4 w-5/6">
+            Elevate Your Lifestyle with Premium
+            Wellness Solutions
+          </div>
+          <div class="font-medium text-[#1A3E3F] sm:text-xl text-lg my-5 lg:w-2/4 w-3/4">
+            Discover our exclusive range of top-tier beauty
+            and wellness products imported from the USA.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Add this script at the bottom -->
+  <script src="js/app.js"></script>
   </body>
 
 </html>
