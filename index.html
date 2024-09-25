@@ -14,12 +14,12 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="css/style.css">
 
   <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
 
-  <body class="overflow-x-hidden">
+  <body class="overflow-x-hidden scroll-smooth">
 
   <!--Navigation Bar-->
     <nav class="absolute w-full z-20 top-0 start-0 pt-7">
@@ -47,14 +47,14 @@
                 <img class="h-24 w-auto" src="img/logo.png" alt="">
               </a>
               <div class="flex items-center justify-center space-x-20 sm:space-x-9 xl:w-3/6 w-4/6 bg-white lg:h-14 h-10 rounded-full shadow-[0px_4px_54px_0px_rgba(26,62,63,0.2)]">
-                <a href="#" class="rounded-md px-3 py-3 xl:text-xl lg:text-lg text-sm text-[#1A3E3F] font-sans font-[650]">Home</a>
-                <a href="#" class="rounded-md px-3 py-3 xl:text-xl lg:text-lg text-sm text-[#1A3E3F] font-sans font-[650]">About Us</a>
-                <a href="#" class="rounded-md px-3 py-3 xl:text-xl lg:text-lg text-sm text-[#1A3E3F] font-sans font-[650]">Brands</a>
-                <a href="#" class="rounded-md px-3 py-3 xl:text-xl lg:text-lg text-sm text-[#1A3E3F] font-sans font-[650]">Products</a>
-                <a href="#" class="rounded-md px-3 py-3 xl:text-xl lg:text-lg text-sm text-[#1A3E3F] font-sans font-[650]">Sustainability</a>
+                <a href="#" class="rounded-md px-3 py-3 2xl:text-lg xl:text-base lg:text-sm text-sm text-[#1A3E3F] font-sans font-[650]">Home</a>
+                <a href="#about" class="rounded-md px-3 py-3 2xl:text-lg xl:text-base lg:text-sm text-sm text-[#1A3E3F] font-sans font-[650]">About Us</a>
+                <a href="#brands" class="rounded-md px-3 py-3 2xl:text-lg xl:text-base lg:text-sm text-sm text-[#1A3E3F] font-sans font-[650]">Brands</a>
+                <a href="#products" class="rounded-md px-3 py-3 2xl:text-lg xl:text-base lg:text-sm text-sm text-[#1A3E3F] font-sans font-[650]">Products</a>
+                <a href="#sustain" class="rounded-md px-3 py-3 2xl:text-lg xl:text-base lg:text-sm text-sm text-[#1A3E3F] font-sans font-[650]">Sustainability</a>
               </div>
               <div class="flex items-center justify-center rounded-full bg-[#EFD49E] lg:w-40 lg:h-14 w-30 h-10">
-                <a href="#" class="rounded-md px-3 py-3 lg:text-xl text-[#1A3E3F] font-s ans font-[650]">Contact Us</a>
+                <a href="#contact" class="rounded-md px-3 py-3 lg:text-xl text-[#1A3E3F] font-s ans font-[650]">Contact Us</a>
               </div>
             </div>
           </div>
@@ -65,116 +65,536 @@
       <div class="md:hidden bg-white hidden" id="mobile-menu">
         <div class="space-y-1 px-2 pb-3 pt-2">
           <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-          <a href="#" class="block rounded-md bg-blue-950 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a>
-          <a href="#" class="block rounded-md px-3 py-2 text-base font-semibold font-sans text-blue-950 hover:bg-blue-900 hover:text-white">Team</a>
-          <a href="#" class="block rounded-md px-3 py-2 text-base font-semibold font-sans text-blue-950 hover:bg-blue-900 hover:text-white">Projects</a>
-          <a href="#" class="block rounded-md px-3 py-2 text-base font-semibold font-sans text-blue-950 hover:bg-blue-900 hover:text-white">Calendar</a>
+          <a href="#" class="block rounded-md bg-blue-950 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
+          <a href="#about" class="block rounded-md px-3 py-2 text-base font-semibold font-sans text-blue-950 hover:bg-blue-900 hover:text-white">About Us</a>
+          <a href="#brands" class="block rounded-md px-3 py-2 text-base font-semibold font-sans text-blue-950 hover:bg-blue-900 hover:text-white">Brands</a>
+          <a href="#products" class="block rounded-md px-3 py-2 text-base font-semibold font-sans text-blue-950 hover:bg-blue-900 hover:text-white">Products</a>
+          <a href="#sustain" class="block rounded-md px-3 py-2 text-base font-semibold font-sans text-blue-950 hover:bg-blue-900 hover:text-white">Sustainability</a>
+          <a href="#contact" class="block rounded-md px-3 py-2 text-base font-semibold font-sans text-blue-950 hover:bg-blue-900 hover:text-white">Contact</a>
         </div>
       </div>
     </nav>
 
-  <section class="relative z-10 h-[500px]">
-    <div class="h-3/4 ">
-      <div class="w-auto h-[43.5rem] mx-5 my-5 rounded-3xl bg-cover bg-center " style="background-image: url('img/home.jpg');">
-        <div class="h-full w-full rounded-3xl bg-gradient-to-b from-[rgba(239,212,158,0)] via-[#EFD49E66] to-[#EFD49E] flex justify-center flex-col items-center text-center">
-          <div class="rounded-full w-fit bg-white m-10">
-            <img src="img/logo.png" alt="" class="w-64">
-          </div>
-          <div class="flex items-center flex-col justify-center">
-            <div class="font-bold text-[#1A3E3F] sm:text-5xl text-4xl mb-5 lg:w-3/4 w-5/6">
-              Elevate Your Lifestyle with Premium
-              Wellness Solutions
+  <main class="scroll-smooth">
+    <!--Home-->
+    <section class="relative z-10 h-[500px]">
+      <div class="h-3/4 ">
+        <div class="w-auto h-[43.5rem] mx-5 my-5 rounded-3xl bg-cover bg-center " style="background-image: url('img/home.jpg');">
+          <div class="h-full w-full rounded-3xl bg-gradient-to-b from-[rgba(239,212,158,0)] via-[#EFD49E66] to-[#EFD49E] flex justify-center flex-col items-center text-center">
+            <div class="rounded-full w-fit bg-white m-10">
+              <img src="img/logo.png" alt="" class="w-64">
             </div>
-            <div class="font-medium text-[#1A3E3F] sm:text-xl text-lg my-5 lg:w-2/4 w-3/4">
-              Discover our exclusive range of top-tier beauty
-              and wellness products imported from the USA.
+            <div class="flex items-center flex-col justify-center">
+              <div class="font-bold text-[#1A3E3F] sm:text-5xl text-4xl mb-5 lg:w-3/4 w-5/6">
+                Elevate Your Lifestyle with Premium
+                Wellness Solutions
+              </div>
+              <div class="font-medium text-[#1A3E3F] sm:text-xl text-lg my-5 lg:w-2/4 w-3/4">
+                Discover our exclusive range of top-tier beauty
+                and wellness products imported from the USA.
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!--About-->
+    <section>
+      <div class="relative bg-[#1A3E3F] xl:h-[110vh] lg:h-[165vh] md:h-[150vh] sm:h-[150vh] z-0">
+        <div  class="flex flex-1 pt-64">
+          <div id="about" class="flex flex-row lg:justify-between justify-center">
+            <div  class="w-4/6 lg:pl-28 pl-0">
+              <div class="font-bold text-[#EFD49E] md:text-5xl text-4xl py-5">
+                About Us
+              </div>
+              <div class="font-[350] text-white md:text-lg text-base py-3">
+                At Vital Essence, we are dedicated to bringing the finest beauty and wellness products from the USA to
+                Sri Lanka. Our journey began with a passion for enhancing lifestyles by providing access to premium
+                products that promote self-care and well-being.
+              </div>
+              <div class="font-[350] text-white md:text-lg text-base py-3">
+                We specialize in importing high-quality beauty and wellness brands, carefully selected to meet the needs
+                and preferences of our discerning customers in Sri Lanka. Each product in our portfolio reflects our
+                commitment to quality, safety, and efficacy, ensuring that our customers receive only the best.
+              </div>
+              <div class="font-[350] text-white md:text-lg text-base py-3">
+                Through our strategic partnerships and a deep understanding of the Sri Lankan market, we have established
+                ourselves as a trusted name in the beauty and wellness industry. We strive to offer products that not only
+                meet international standards but also cater to local tastes and preferences.
+              </div>
+              <div class="font-[350] text-white md:text-lg text-base py-3">
+                <b>At Vital Essence, our mission is simple:</b> to elevate lifestyles by offering exceptional beauty and wellness
+                solutions. We are committed to continuously expanding our range, bringing innovative products to our
+                customers, and helping them achieve their beauty and wellness goals.
+              </div>
+            </div>
+            <div class="h-[564px] w-[564px] bg-cover bg-center lg:block hidden" style="background-image: url('img/about-img.png');">
 
-  <section class="relative bg-[#1A3E3F] xl:h-[110vh] lg:h-[165vh] md:h-[150vh] sm:h-[150vh] z-0">
-    <div class="flex flex-1 pt-64">
-      <div class="flex flex-row lg:justify-between justify-center">
-        <div class="w-4/6 lg:pl-28 pl-0">
-          <div class="font-bold text-[#EFD49E] md:text-5xl text-4xl py-5">
-            About Us
+            </div>
           </div>
-          <div class="font-[350] text-white md:text-lg text-base py-3">
-            At Vital Essence, we are dedicated to bringing the finest beauty and wellness products from the USA to
-            Sri Lanka. Our journey began with a passion for enhancing lifestyles by providing access to premium
-            products that promote self-care and well-being.
-          </div>
-          <div class="font-[350] text-white md:text-lg text-base py-3">
-            We specialize in importing high-quality beauty and wellness brands, carefully selected to meet the needs
-            and preferences of our discerning customers in Sri Lanka. Each product in our portfolio reflects our
-            commitment to quality, safety, and efficacy, ensuring that our customers receive only the best.
-          </div>
-          <div class="font-[350] text-white md:text-lg text-base py-3">
-            Through our strategic partnerships and a deep understanding of the Sri Lankan market, we have established
-            ourselves as a trusted name in the beauty and wellness industry. We strive to offer products that not only
-            meet international standards but also cater to local tastes and preferences.
-          </div>
-          <div class="font-[350] text-white md:text-lg text-base py-3">
-            <b>At Vital Essence, our mission is simple:</b> to elevate lifestyles by offering exceptional beauty and wellness
-            solutions. We are committed to continuously expanding our range, bringing innovative products to our
-            customers, and helping them achieve their beauty and wellness goals.
-          </div>
-        </div>
-        <div class="h-[564px] w-[564px] bg-cover bg-center lg:block hidden" style="background-image: url('img/about-img.png');">
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="flex flex-row justify-center">
-      <div class="w-4/6 text-center">
-        <div class="font-bold text-[#fac966] md:text-4xl text-3xl py-5">
-          History The About Us
-        </div>
-        <div class="font-[350] text-black md:text-lg text-base py-3">
-          Founded in 2020 by a civil engineer with a vision for creating a side business, our journey began by
-          importing a single hair regrowth product from the USA. Driven by curiosity and a passion for growth,
-          he sought new opportunities to ensure the venture's success. Amid the global challenges of COVID-19,
-          he found a business partner with a strong background in marketing, and together they formed a partnership
-          grounded in mutual trust and transparency, aiming to elevate the business to new heights.
-        </div>
-        <div class="font-[350] text-black md:text-lg text-base py-3">
-          The commitment and honesty of both partners quickly led to the success of their initial product in the market.
-          This encouraged them to establish a company focused on importing premium beauty and wellness products, mainly
-          from the USA, to ensure they offer only the best to their customers. Today, our company, Vital Essence, proudly
-          imports a range of reputable brands, each chosen to enhance our customers' lives. At Vital Essence, we believe
-          in "Elevates Lifestyle"—bringing quality and excellence to all we do.
         </div>
       </div>
-    </div>
-    <div class="flex flex-row justify-center">
-      <div class="block max-w-sm p-6 bg-white border rounded-lg shadow hover:bg-gray-100 dark:bg-[#1A3E3F] dark:border-gray-700 dark:hover:bg-green-700 m-5">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#fac966]">Our Brands</h5>
-        <p class="font-normal text-white">We partner with top American brands
-          renowned for their quality and innovation. Each brand
-          we carry has been carefully selected for its Commitment
-          to excellence and efficacy in the wellness and beauty
-          industry.</p>
-      </div>
-      <div class="block max-w-sm p-6 bg-white border rounded-lg shadow hover:bg-gray-100 dark:bg-[#1A3E3F] dark:border-gray-700 dark:hover:bg-green-950 m-5">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#fac966]">Our Commitment</h5>
-        <p class="font-normal text-white"> We are dedicated to ensuring that
-          every product we offer meets the highest quality
-          standards. From sourcing to packaging, our focus is
-          on delivering exceptional, effective and sustainable
-          products.</p>
-      </div>
-    </div>
-  </section>
 
-  <!-- Add this script at the bottom -->
-  <script src="js/app.js"></script>
+      <div>
+        <div class="flex flex-row justify-center">
+          <div class="w-4/6 text-center">
+            <div class="font-bold text-[#fac966] md:text-4xl text-3xl py-5">
+              History The About Us
+            </div>
+            <div class="font-[350] text-black md:text-lg text-base py-3">
+              Founded in 2020 by a civil engineer with a vision for creating a side business, our journey began by
+              importing a single hair regrowth product from the USA. Driven by curiosity and a passion for growth,
+              he sought new opportunities to ensure the venture's success. Amid the global challenges of COVID-19,
+              he found a business partner with a strong background in marketing, and together they formed a partnership
+              grounded in mutual trust and transparency, aiming to elevate the business to new heights.
+            </div>
+            <div class="font-[350] text-black md:text-lg text-base py-3">
+              The commitment and honesty of both partners quickly led to the success of their initial product in the market.
+              This encouraged them to establish a company focused on importing premium beauty and wellness products, mainly
+              from the USA, to ensure they offer only the best to their customers. Today, our company, Vital Essence, proudly
+              imports a range of reputable brands, each chosen to enhance our customers' lives. At Vital Essence, we believe
+              in "Elevates Lifestyle"—bringing quality and excellence to all we do.
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row flex-wrap justify-center">
+          <div class="block max-w-sm p-6 bg-white border rounded-lg shadow hover:bg-gray-100 dark:bg-[#1A3E3F] dark:border-gray-700 dark:hover:bg-green-950 m-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#fac966]">Our Brands</h5>
+            <p class="font-normal text-white">We partner with top American brands
+              renowned for their quality and innovation. Each brand
+              we carry has been carefully selected for its Commitment
+              to excellence and efficacy in the wellness and beauty
+              industry.</p>
+          </div>
+          <div class="block max-w-sm p-6 bg-white border rounded-lg shadow hover:bg-gray-100 dark:bg-[#1A3E3F] dark:border-gray-700 dark:hover:bg-green-950 m-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#fac966]">Our Commitment</h5>
+            <p class="font-normal text-white"> We are dedicated to ensuring that
+              every product we offer meets the highest quality
+              standards. From sourcing to packaging, our focus is
+              on delivering exceptional, effective and sustainable
+              products.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Brands-->
+    <section class="brands flex-1">
+      <div class="relative"
+              style="
+          background: url('img/bg-brands.png');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        ">
+        <!-- Background color overlay with rgba for transparency -->
+        <div class="absolute inset-0 bg-[#1A3E3F] opacity-90"></div>
+
+        <!-- Content stays in front, unaffected by background opacity -->
+        <div class="relative p-3 md:p-10 flex flex-col items-center z-10">
+          <span
+                  class="mb-4 md:mb-10 text-[1.8rem] md:text-[2.8rem] font-bold text-[#EFD49E]"
+          >Brands We Import</span
+          >
+
+          <div class="w-[95%] md:w-[100%] md:mb-2 xl:mb-4  flex flex-wrap justify-center">
+            <div
+                    class="relative h-auto rounded-2xl w-[20rem] sm-[18rem] flex-col flex items-center space-y-1 md:space-y-5 m-2 p-3 text-white shadow-lg"
+            >
+              <div
+                      class="absolute inset-0 bg-[#EFD49E] bg-opacity-20 rounded-2xl pointer-events-none"
+              ></div>
+              <div class="relative z-10 flex flex-col items-center space-y-5">
+                <img
+                        class="w-[10rem] md:w-[12rem]"
+                        src="img/kirkland-logo.png"
+                />
+                <h1
+                        class="text-[1.2rem] md:text-[1.7rem] font-bold"
+                        style="text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2)"
+                >
+                  Kirkland Signature
+                </h1>
+                <p
+                        class="text-center text-[0.8rem] md:text-[0.9rem] font-light"
+                >
+                  A trusted name in health and wellness, Kirkland Signature
+                  offers a range of high-quality, scientifically validated
+                  products designed to support your well-being.
+                </p>
+                <p
+                        class="text-[0.9rem] md:text-[0.9rem] text-center font-light"
+                >
+                  Proven effectiveness, high-quality ingredients, and affordable
+                  pricing.
+                </p>
+                <a
+                        href="https://www.costco.com/kirkland-signature.html"
+                        target="_blank"
+                ><span
+                        class="text-[#EFD49E] text-[1rem] md:text-[1.1rem] p-2 rounded hover:shadow-lg cursor-pointer"
+                >Visit Kirkland Signature</span
+                ></a
+                >
+              </div>
+            </div>
+
+            <div
+                    class="relative h-auto rounded-2xl w-[20rem] sm-[18rem] flex-col flex items-center space-y-1 md:space-y-5 m-2 p-3 text-white shadow-lg"
+            >
+              <div
+                      class="absolute inset-0 bg-[#EFD49E] bg-opacity-20 rounded-2xl pointer-events-none"
+              ></div>
+              <div class="relative z-10 flex flex-col items-center space-y-5">
+                <img
+                        class="w-[10rem] md:w-[12rem]"
+                        src="img/youtheary-logo.png"
+                />
+                <h1
+                        class="text-[1.2rem] md:text-[1.7rem] font-bold"
+                        style="text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2)"
+                >
+                  Youtheory
+                </h1>
+                <p
+                        class="text-center text-[0.8rem] md:text-[0.9rem] font-light"
+                >
+                  Youtheory is renowned for its advanced nutritional supplements
+                  that promote youthful skin, hair, and joints with premium
+                  ingredients.
+                </p>
+                <p
+                        class="text-[0.9rem] md:text-[0.9rem] text-center font-light"
+                >
+                  Innovative formulations, visible results, and high-quality
+                  ingredients.
+                </p>
+                <a href="https://www.youtheory.com/" target="_blank"
+                ><span
+                        class="text-[#EFD49E] text-[1rem] md:text-[1.1rem] p-2 rounded hover:shadow-lg cursor-pointer"
+                >Visit Youtheory</span
+                ></a
+                >
+              </div>
+            </div>
+
+            <div
+                    class="relative h-auto rounded-2xl w-[20rem] sm-[18rem] flex-col flex items-center space-y-1 md:space-y-5 m-2 p-3 text-white shadow-lg"
+            >
+              <div
+                      class="absolute inset-0 bg-[#EFD49E] bg-opacity-20 rounded-2xl pointer-events-none"
+              ></div>
+              <div class="relative z-10 flex flex-col items-center space-y-5">
+                <img
+                        class="w-[2rem] md:w-[2rem]"
+                        src="img/toniiq.png"
+                />
+                <h1
+                        class="text-[1.2rem] md:text-[1.7rem] font-bold"
+                        style="text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2)"
+                >
+                  Toniiq
+                </h1>
+                <p
+                        class="text-center text-[0.8rem] md:text-[0.9rem] font-light"
+                >
+                  Specializes in high-potency supplements
+                  with superior bioavailability to support
+                  optimal health and well-being.
+                </p>
+                <p
+                        class="text-[0.9rem] md:text-[0.9rem] text-center font-light"
+                >
+                  Potent formulas, high purity, and
+                  advanced delivery systems.
+                </p>
+                <a
+                        href="https://www.toniiq.com/"
+                        target="_blank"
+                ><span
+                        class="text-[#EFD49E] text-[1rem] md:text-[1.1rem] p-2 rounded hover:shadow-lg cursor-pointer"
+                >Visit Toniiq</span
+                ></a
+                >
+              </div>
+            </div>
+
+            <div
+                    class="relative h-auto rounded-2xl w-[20rem] sm-[18rem] flex-col flex items-center space-y-1 md:space-y-5 m-2 p-3 text-white shadow-lg"
+            >
+              <div
+                      class="absolute inset-0 bg-[#EFD49E] bg-opacity-20 rounded-2xl pointer-events-none"
+              ></div>
+              <div class="relative z-10 flex flex-col items-center space-y-5">
+                <img
+                        class="w-[10rem] md:w-[12rem]"
+                        src="img/MIELLE-logo.png"
+                />
+                <h1
+                        class="text-[1.2rem] md:text-[1.7rem] font-bold"
+                        style="text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2)"
+                >
+                  Mielle Organics
+                </h1>
+                <p
+                        class="text-center text-[0.8rem] md:text-[0.9rem] font-light"
+                >
+                  Mielle Organics offers natural and organic
+                  haircare products that nourish and
+                  strengthen hair, promoting overall hair
+                  health and beauty.
+                </p>
+                <p
+                        class="text-[0.9rem] md:text-[0.9rem] text-center font-light"
+                >
+                  Organic ingredients, cruelty-free
+                  formulations, and effective results for
+                  all hair types.
+                </p>
+                <a
+                        href="https://mielleorganics.com/"
+                        target="_blank"
+                ><span
+                        class="text-[#EFD49E] text-[1rem] md:text-[1.1rem] p-2 rounded hover:shadow-lg cursor-pointer"
+                >Visit Mielle Organics</span
+                ></a
+                >
+              </div>
+            </div>
+
+            <div
+                    class="relative h-auto rounded-2xl w-[20rem] sm-[18rem] flex-col flex items-center space-y-1 md:space-y-5 m-2 p-3 text-white shadow-lg"
+            >
+              <div
+                      class="absolute inset-0 bg-[#EFD49E] bg-opacity-20 rounded-2xl pointer-events-none"
+              ></div>
+              <div class="relative z-10 flex flex-col items-center space-y-5">
+                <img
+                        class="w-[10rem] md:w-[12rem]"
+                        src="img/kirkland-logo.png"
+                />
+                <h1
+                        class="text-[1.2rem] md:text-[1.7rem] font-bold"
+                        style="text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2)"
+                >
+                  The Ordinary
+                </h1>
+                <p
+                        class="text-center text-[0.8rem] md:text-[0.9rem] font-light"
+                >
+                  Known for its groundbreaking skincare
+                  products, The Ordinary focuses on
+                  delivering high-quality, science-driven
+                  formulations at accessible prices.
+                </p>
+                <p
+                        class="text-[0.9rem] md:text-[0.9rem] text-center font-light"
+                >
+                  Transparent ingredients, clinical
+                  formulations, and affordability.
+                </p>
+                <a
+                        href="https://theordinary.com/en-us"
+                        target="_blank"
+                ><span
+                        class="text-[#EFD49E] text-[1rem] md:text-[1.1rem] p-2 rounded hover:shadow-lg cursor-pointer"
+                >Visit The Ordinary</span
+                ></a
+                >
+              </div>
+            </div>
+
+            <div
+                    class="relative h-auto rounded-2xl w-[20rem] sm-[18rem] flex-col flex items-center space-y-1 md:space-y-5 m-2 p-3 text-white shadow-lg"
+            >
+              <div
+                      class="absolute inset-0 bg-[#EFD49E] bg-opacity-20 rounded-2xl pointer-events-none"
+              ></div>
+              <div class="relative z-10 flex flex-col items-center space-y-5">
+                <img
+                        class="w-[10rem] md:w-[12rem]"
+                        src="img/now-logo.png"
+                />
+                <h1
+                        class="text-[1.2rem] md:text-[1.7rem] font-bold"
+                        style="text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2)"
+                >
+                  NOW Foods
+                </h1>
+                <p
+                        class="text-center text-[0.8rem] md:text-[0.9rem] font-light"
+                >
+                  A leading provider of natural products,
+                  NOW Foods offers a diverse range of
+                  supplements, health foods, and personal
+                  care items.
+                </p>
+                <p
+                        class="text-[0.9rem] md:text-[0.9rem] text-center font-light"
+                >
+                  Extensive product range, high-quality
+                  standards, and commitment to health.
+                </p>
+                <a
+                        href="https://www.nowfoods.com/"
+                        target="_blank"
+                ><span
+                        class="text-[#EFD49E] text-[1rem] md:text-[1.1rem] p-2 rounded hover:shadow-lg cursor-pointer"
+                >Visit NOW Foods</span
+                ></a
+                >
+              </div>
+            </div>
+
+            <div
+                    class="relative h-auto rounded-2xl w-[20rem] sm-[18rem] flex-col flex items-center space-y-1 md:space-y-5 m-2 p-3 text-white shadow-lg"
+            >
+              <div
+                      class="absolute inset-0 bg-[#EFD49E] bg-opacity-20 rounded-2xl pointer-events-none"
+              ></div>
+              <div class="relative z-10 flex flex-col items-center space-y-5">
+                <img
+                        class="w-[10rem] md:w-[15rem]"
+                        src="img/neocell-logo.png"
+                />
+                <h1
+                        class="text-[1.2rem] md:text-[1.7rem] font-bold"
+                        style="text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2)"
+                >
+                  NeoCell
+                </h1>
+                <p
+                        class="text-center text-[0.8rem] md:text-[0.9rem] font-light"
+                >
+                  Specializes in collagen supplements
+                  designed to support skin, hair, and joint
+                  health with high-quality, bioavailable
+                  ingredients.
+                </p>
+                <p
+                        class="text-[0.9rem] md:text-[0.9rem] text-center font-light"
+                >
+                  Effective collagen formulas, high purity,
+                  and targeted health benefits.
+                </p>
+                <a
+                        href="https://www.betteryourhealth.com/neocell/"
+                        target="_blank"
+                ><span
+                        class="text-[#EFD49E] text-[1rem] md:text-[1.1rem] p-2 rounded hover:shadow-lg cursor-pointer"
+                >Visit NeoCell</span
+                ></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--products-->
+    <section id="products">
+      <div class="flex justify-center flex-col xl:h-[200px] items-center bg-cover bg-center" style="background-image: url('img/products-bg.jpg');">
+        <div class="font-bold text-[#1A3E3F] md:text-5xl text-4xl py-5 text-center xl:pb-28">
+          Our eCommerce Partners
+        </div>
+        <div class="flex flex-row flex-wrap justify-center xl:absolute static">
+          <a href="https://minoxidillanka.lk/" class="bg-[#455C52] p-5 2xl:w-64 w-56 flex items-center relative xl:top-24 m-10 hover:scale-105 hover:shadow-lg transition-transform duration-300" style="box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);">
+            <img class="2xl:w-64 w-56" src="img/minoxidil_logo.png" alt="">
+          </a>
+          <a href="https://mensline.lk/" class="bg-[#455C52] p-5 2xl:w-64 w-56 flex items-center relative xl:top-24 m-10 hover:scale-105 hover:shadow-lg transition-transform duration-300" style="box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);">
+            <img class="2xl:w-64 w-56" src="img/mensline_logo.png" alt="">
+          </a>
+          <a href="https://beautysecrets.lk/" class="bg-[#455C52] p-5 2xl:w-64 w-56 flex items-center justify-around relative xl:top-24 m-10 hover:scale-105 hover:shadow-lg transition-transform duration-300" style="box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);">
+            <img class="xl:h-16 h-14" src="img/beautyse_logo.png" alt="">
+            <div class="text-white font-bold xl:text-xl text-lg">BeautySecret</div>
+          </a>
+          <a href="" class="bg-[#455C52] p-5 2xl:w-64 w-56 flex items-center relative xl:top-24 m-10 hover:scale-105 hover:shadow-lg transition-transform duration-300" style="box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);">
+            <img class="2xl:w-64 w-56" src="img/comming-soon.png" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-white h-24"></div>
+
+    <!--Sustain-->
+    <section id="sustain">
+      <div class="flex flex-col justify-center  bg-cover bg-center" style="background-image: url('img/sustain-bg.png');">
+        <div class="font-bold text-[#EFD49E] md:text-5xl md:text-4xl text-3xl py-20 text-center">
+          Sustainability and Innovation
+        </div>
+
+        <div class="md:mx-28 mx-5 bg-[#EFD49E] rounded-[30px] flex md:flex-row flex-col ">
+          <div class="md:w-4/6 w-full md:p-14 p-7 font-[350] md:text-2xl text-xl text-[#1A3E3F] md:text-center">
+            <b>Sustainable Practices</b> We are committed to sustainability,
+            ensuring our products and packaging are eco-friendly.
+            We collaborate with brands that prioritize reducing
+            environmental impact and promoting ethical practices.
+          </div>
+          <div class="bg-cover bg-center w-2/6 rounded-r-sm md:block hidden" style="background-image: url('img/sustainable.jpg');">
+
+          </div>
+        </div>
+
+        <div class="md:mx-28 mx-5 bg-[#1A3E3F] rounded-[30px] flex md:flex-row flex-col m-10 mb-20 ">
+          <div class="bg-cover bg-center w-2/6 rounded-r-sm md:block hidden" style="background-image: url('img/innovation.jpg');">
+
+          </div>
+          <div class="md:w-4/6 w-full md:p-14 p-7 font-[350] md:text-2xl text-xl text-white">
+            <b>Innovation in Wellness</b> Our products feature the latest
+            advancements in Wellness and beauty, utilizing
+            cutting-edge technology and research to provide
+            effective and innovative solutions.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--Contact-->
+    <section id="contact">
+      <div class="flex-grow flex items-center justify-center bg-cover bg-center md:p-24 p-5" style="background-image: url('img/contactbg.png');">
+        <div class="md:p-10 p-5 rounded-lg w-full max-w-lg shadow-lg">
+          <h1 class="text-4xl font-bold text-center mb-6 text-[#1A3E3F]">Contact Us</h1>
+          <form action="#" class="flex flex-col space-y-4">
+            <input type="text" name="name" placeholder="Name" class="border border-gray-300 p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1A3E3F]" required>
+            <input type="email" name="email" placeholder="Email" class="border border-gray-300 p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1A3E3F]" required>
+            <input type="tel" name="phone" placeholder="Phone" class="border border-gray-300 p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1A3E3F]" required>
+            <textarea name="message" placeholder="Message" class="border border-gray-300 p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1A3E3F] h-24 resize-none" required></textarea>
+            <button type="submit" class="w-full bg-[#1A3E3F] text-white py-3 rounded-lg hover:bg-[#173736] transition-all">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+    <!--Footer-->
+    <footer >
+          <div class="bg-[#1A3E3F] py-20 text-center">
+            <div class="text-white">
+              <h1 class="text-3xl font-bold mb-4">Customer Support Information</h1>
+              <p><a href="mailto:support@vitalessence.com" class="text-white hover:underline">support@vitalessence.com</a></p>
+              <p class="mt-2">+00 000 0000</p>
+              <p class="mt-2">Head Office: (Address)</p>
+            </div>
+          </div>
+          <div class="bg-[#EFD49E] py-5">
+            <div class="flex justify-between items-center flex-wrap text-sm px-10">
+              <p>&copy; 2024 Vital Essence. All Rights Reserved.</p>
+              <nav class="flex gap-5">
+                <a href="#" class="hover:underline">Terms</a>
+                <a href="#" class="hover:underline">Privacy</a>
+                <a href="#" class="hover:underline">Cookies</a>
+              </nav>
+            </div>
+          </div>
+        </footer>
+
+
+
+    <script src="js/app.js"></script>
   </body>
 
 </html>
